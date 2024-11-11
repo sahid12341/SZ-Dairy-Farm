@@ -1,0 +1,457 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #e0f2fe;
+    --text-color: #000000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #dfe0e2;
+    line-height: 1.6;
+}
+
+header {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    linear-gradient(135deg, rgba(30, 129, 175, 0.8),  rgba(0, 217, 255, 0.8));
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.336);
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem 6rem 2rem;
+}
+
+.navigation {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    linear-gradient(135deg, rgba(30, 129, 175, 0.8),  rgba(0, 217, 255, 0.8));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.418);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: #0f172a;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    linear-gradient(135deg, rgba(0, 238, 255, 0.8),  rgba(0, 183, 255, 0.8));
+}
+
+.policy-section {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.301);
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    linear-gradient(135deg, rgba(30, 129, 175, 0.8),  rgba(0, 217, 255, 0.8));
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.policy-section:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.important-note {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    linear-gradient(135deg, rgba(255, 1, 120, 0.8),  rgba(0, 217, 255, 0.8));
+    border-left: 4px solid var(--error-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    animation: slideIn 0.8s ease-out;
+}
+
+.success-note {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    linear-gradient(135deg, rgba(30, 129, 175, 0.8),  rgba(255, 0, 106, 0.8));
+    border-left: 4px solid var(--success-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.main-ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+.main-li {
+    margin-bottom: 0.8rem;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+.main-li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.contact-box {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    linear-gradient(135deg, rgba(10, 177, 85, 0.8),  rgba(0, 217, 255, 0.8));
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.contact-box h2 {
+    color: var(--primary-color);
+    justify-content: center;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    linear-gradient(135deg, rgba(30, 129, 175, 0.8),  rgba(0, 255, 34, 0.8));
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.contact-method:hover {
+    transform: translateY(-3px);
+}
+
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.1rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+footer {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(88, 94, 95, 0.8));
+}
+
+.footer-img {
+    width: 250px; height: 150px;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-ul-container {
+    width: 45%;
+    padding-left: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title {
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category .footer-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.footer-link:hover {
+    color: #000000;
+}
+
+.footer-title,
+.info {
+    color: rgba(255, 255, 255, 0.75);
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.footer-title {
+    margin-top: 80px;
+    color: #000000;
+}
+
+.footer-social-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    color: #000000;
+    margin-left: 20px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.social-link i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-link:nth-child(1) {
+    margin-left: 0;
+}
+
+.footer-credit {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 100;
+    text-align: center;
+    color: #000000;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.social {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    flex: 1;
+    position: relative;
+}
+
+.social ul {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+.social ul li {
+    list-style: none;
+    margin-left: auto;
+}
+
+.social ul li a {
+    width: 80px;
+    height: 80px;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+        linear-gradient(135deg, rgb(80, 160, 197), rgba(91, 168, 182, 0.596));
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #00000050;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.social ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.social ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.social ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.social ul li a:hover:before {
+    top: 0;
+}
+
+.social ul li:nth-child(1) a:before {
+    background: linear-gradient(120deg, #3b5998, #9db4df);
+}
+
+.social ul li:nth-child(4) a:before {
+    background: linear-gradient(to right, #25D366, #128C7E);
+    ;
+}
+
+.social ul li:nth-child(2) a:before {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.social ul li:nth-child(3) a:before {
+    background: linear-gradient(to top, #f10f0f, #e67e73, #ffffff);
+    ;
+}
+
+.footer-credit {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 100;
+    text-align: center;
+    color: #000000;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+.social ul li a {
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+}
+
+.social ul li a:hover {
+    animation: wave 0.5s ease-in-out;
+    /* Apply wave effect on hover */
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
